@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8">
+    <title>Meach</title>
+</head>
+<body>
+<form th:action="@{/activate}" method="post">
+    <label th:text="${message}">empty</label>
+    <label>Activation code: <input type="text" name="activationCode"/> </label>
+    <input type="submit" value= "activate">
+</form>
+</body>
+</html>

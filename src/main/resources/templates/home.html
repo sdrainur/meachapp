@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home two || Izeetak || Izeetak HTML Template For IT Solutions Company</title>
+</head>
+
+<body>
+    <h1>Home page. You are logged in!</h1>
+    <a href="/teachers">Teachers list</a>
+    <br/>
+    <a href="/users">Users list</a>
+    <br/>
+    <form th:action="@{/logout}" method="post">
+        <input type="submit" value="Sign Out"/>
+    </form>
+</body>
+
+</html>
