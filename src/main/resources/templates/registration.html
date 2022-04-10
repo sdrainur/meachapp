@@ -7,7 +7,7 @@
 <body>
 <form th:action="@{/registration}" method="post">
     <p th:text="${message}">null</p>
-    <div><label> User Name : <input type="text" name="username"/> </label></div>
+    <div><label> User Name : <input type="text" name="username" th:value="${usernameCookie}"/> </label></div>
     <div><label> E-Mail: <input type="email" name="email"/> </label></div>
     <div><label> Password: <input type="password" name="password"/> </label></div>
     <div><label> Confirm password: <input type="password" name="confirmPassword"/> </label></div>

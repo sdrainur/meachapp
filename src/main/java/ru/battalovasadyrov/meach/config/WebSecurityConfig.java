@@ -23,18 +23,22 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Bean
     public PasswordEncoder getPasswordEncoder(){
         return new BCryptPasswordEncoder(8);
-        }
+    }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
+                .cors().and()
+                .csrf().and()
                 .authorizeRequests()
-                .antMatchers("/", "/registration", "/activate/**").permitAll()
+                .antMatchers("/", "/registration", "/activate/**", "/password-reset/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
                 .loginPage("/login")
                 .permitAll()
+                .and()
+                .rememberMe()
                 .and()
                 .logout()
                 .permitAll();

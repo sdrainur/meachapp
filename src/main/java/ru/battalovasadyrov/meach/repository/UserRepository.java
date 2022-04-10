@@ -7,6 +7,7 @@ import ru.battalovasadyrov.meach.model.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
     User findByUsername(String username);
+    User findByEmail(String email);
     User findByUsernameAndEmail(String username, String email);
     Iterable<User> findByRolesAndUsername(Role role, String username);
     Iterable<User> findByRoles(Role role);

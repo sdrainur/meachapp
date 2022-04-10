@@ -32,25 +32,16 @@ public class UserService implements UserDetailsService {
 
     @PostMapping("/registration")
     public boolean addUser(User user) {
-        User userFromDb = userRepository.findByUsername(user.getUsername());
+        User userFromDb = userRepository.findByUsernameAndEmail(user.getUsername(), user.getEmail());
         if (userFromDb != null) {
             return false;
         }
-//        user.setActive(true);
         user.setActive(false);
         user.setRoles(Collections.singleton(Role.USER));
-        user.setActivationCode(UUID.randomUUID().toString());
         user.setPassword(passwordEncoder.encode(user.getPassword()));
+        setActivationCode(user);
+        user.setConfirmPassword(null);
         userRepository.save(user);
-        if(!user.getEmail().isEmpty()){
-            String message = String.format(
-                    "Hello, %s \n" +
-                            "Welcome to meach! Your activation code: %s",
-                    user.getUsername(),
-                    user.getActivationCode()
-            );
-            mailSender.send(user.getEmail(), "Activation code", message);
-        }
         return true;
     }
 
@@ -62,6 +53,40 @@ public class UserService implements UserDetailsService {
         user.setActive(true);
         user.setActivationCode(null);
         userRepository.save(user);
+        return true;
+    }
+
+    private void setActivationCode(User user){
+        user.setActivationCode(UUID.randomUUID().toString());
+        if(!user.getEmail().isEmpty()){
+            String message = String.format(
+                    "Hello, %s \n" +
+                            "Welcome to meach! Your activation code: %s",
+                    user.getUsername(),
+                    user.getActivationCode()
+            );
+            mailSender.send(user.getEmail(), "Activation code", message);
+        }
+    }
+
+    public boolean sendResetEmail(String email){
+        User user = userRepository.findByEmail(email);
+        user.setActivationCode(UUID.randomUUID().toString());
+        if(!user.getEmail().isEmpty()){
+            String message = String.format(
+                    "Hello, %s \n" + "! Your password-reset code: %s",
+                    user.getUsername(),
+                    user.getActivationCode()
+            );
+            mailSender.send(user.getEmail(), "Password reset", message);
+            return true;
+        }
+        return false;
+    }
+
+    public boolean resetPassword(String email){
+        User user = userRepository.findByEmail(email);
+        setActivationCode(user);
         return true;
     }
 }
