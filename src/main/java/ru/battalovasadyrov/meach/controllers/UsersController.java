@@ -4,26 +4,35 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.PathVariable;
 import ru.battalovasadyrov.meach.model.User;
 import ru.battalovasadyrov.meach.repository.UserRepository;
 
+import java.util.Optional;
+
 @Controller
-@RequestMapping("users")
 public class UsersController {
     @Autowired
     private UserRepository userRepository;
 
-    @GetMapping("")
-    public String usersPage(Model model){
+    @GetMapping("users")
+    public String usersPage(Model model) {
         Iterable<User> users = userRepository.findAll();
+        for (User user : users) {
+            System.out.println(user.getUsername());
+        }
         model.addAttribute("users", users);
         return "users";
     }
 
-    @GetMapping("/{id}")
-    public String userPage(@RequestParam Long id, Model model){
+    @GetMapping("users/{id}")
+    public String userPage(@PathVariable("id") Long id, Model model) {
+        Optional<User> optionalUserFromDb = userRepository.findById(id);
+        User userFromDb = null;
+        if (optionalUserFromDb.isPresent()) {
+            userFromDb = optionalUserFromDb.get();
+        }
+        model.addAttribute("user", userFromDb);
         return "user-page";
     }
 }

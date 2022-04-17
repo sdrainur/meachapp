@@ -30,7 +30,7 @@ public class UserService implements UserDetailsService {
         return userRepository.findByUsername(username);
     }
 
-    @PostMapping("/registration")
+    // @PostMapping("/registration")
     public boolean addUser(User user) {
         User userFromDb = userRepository.findByUsernameAndEmail(user.getUsername(), user.getEmail());
         if (userFromDb != null) {

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home two || Izeetak || Izeetak HTML Template For IT Solutions Company</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Домой</title>
     <!-- favicons Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="../static/assets/images/favicons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../static/assets/images/favicons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="../static/assets/images/favicons/favicon-16x16.png" />
-    <link rel="manifest" href="../static/assets/images/favicons/site.webmanifest" />
-    <meta name="description" content="Izeetak HTML Template For IT Solutions Company" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/images/favicons/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/images/favicons/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/images/favicons/favicon-16x16.png"/>
+    <link rel="manifest" href="../static/images/favicons/site.webmanifest"/>
+    <meta name="description" content="Izeetak HTML Template For IT Solutions Company"/>
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,36 +20,36 @@
             rel="stylesheet">
 
 
-    <link rel="stylesheet" href="../static/assets/vendors/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../static/assets/vendors/animate/animate.min.css" />
-    <link rel="stylesheet" href="../static/assets/vendors/animate/custom-animate.css" />
-    <link rel="stylesheet" href="../static/assets/vendors/fontawesome/css/all.min.css" />
-    <link rel="stylesheet" href="../static/assets/vendors/jarallax/jarallax.css" />
-    <link rel="stylesheet" href="../static/assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
-    <link rel="stylesheet" href="../static/assets/vendors/nouislider/nouislider.min.css" />
-    <link rel="stylesheet" href="../static/assets/vendors/nouislider/nouislider.pips.css" />
-    <link rel="stylesheet" href="../static/assets/vendors/odometer/odometer.min.css" />
-    <link rel="stylesheet" href="../static/assets/vendors/swiper/swiper.min.css" />
-    <link rel="stylesheet" href="../static/assets/vendors/izeetak-icons/style.css">
-    <link rel="stylesheet" href="../static/assets/vendors/tiny-slider/tiny-slider.min.css" />
-    <link rel="stylesheet" href="../static/assets/vendors/reey-font/stylesheet.css" />
-    <link rel="stylesheet" href="../static/assets/vendors/owl-carousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="../static/assets/vendors/owl-carousel/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="../static/assets/vendors/twentytwenty/twentytwenty.css" />
-    <link rel="stylesheet" href="../static/assets/vendors/bxslider/jquery.bxslider.css" />
-    <link rel="stylesheet" href="../static/assets/vendors/bootstrap-select/css/bootstrap-select.min.css" />
-    <link rel="stylesheet" href="../static/assets/vendors/vegas/vegas.min.css" />
-    <link rel="stylesheet" href="../static/assets/vendors/jquery-ui/jquery-ui.css" />
-    <link rel="stylesheet" href="../static/assets/vendors/timepicker/timePicker.css" />
+    <link rel="stylesheet" href="../static/vendors/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../static/vendors/animate/animate.min.css"/>
+    <link rel="stylesheet" href="../static/vendors/animate/custom-animate.css"/>
+    <link rel="stylesheet" href="../static/vendors/fontawesome/css/all.min.css"/>
+    <link rel="stylesheet" href="../static/vendors/jarallax/jarallax.css"/>
+    <link rel="stylesheet" href="../static/vendors/jquery-magnific-popup/jquery.magnific-popup.css"/>
+    <link rel="stylesheet" href="../static/vendors/nouislider/nouislider.min.css"/>
+    <link rel="stylesheet" href="../static/vendors/nouislider/nouislider.pips.css"/>
+    <link rel="stylesheet" href="../static/vendors/odometer/odometer.min.css"/>
+    <link rel="stylesheet" href="../static/vendors/swiper/swiper.min.css"/>
+    <link rel="stylesheet" href="../static/vendors/izeetak-icons/style.css">
+    <link rel="stylesheet" href="../static/vendors/tiny-slider/tiny-slider.min.css"/>
+    <link rel="stylesheet" href="../static/vendors/reey-font/stylesheet.css"/>
+    <link rel="stylesheet" href="../static/vendors/owl-carousel/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="../static/vendors/owl-carousel/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="../static/vendors/twentytwenty/twentytwenty.css"/>
+    <link rel="stylesheet" href="../static/vendors/bxslider/jquery.bxslider.css"/>
+    <link rel="stylesheet" href="../static/vendors/bootstrap-select/css/bootstrap-select.min.css"/>
+    <link rel="stylesheet" href="../static/vendors/vegas/vegas.min.css"/>
+    <link rel="stylesheet" href="../static/vendors/jquery-ui/jquery-ui.css"/>
+    <link rel="stylesheet" href="../static/vendors/timepicker/timePicker.css"/>
 
     <!-- template styles -->
-    <link rel="stylesheet" href="../static/assets/css/izeetak.css" />
-    <link rel="stylesheet" href="../static/assets/css/izeetak-responsive.css" />
+    <link rel="stylesheet" href="../static/css/izeetak.css"/>
+    <link rel="stylesheet" href="../static/css/izeetak-responsive.css"/>
 </head>
 
 <body>
 <div class="preloader">
-    <img class="preloader__image" width="60" src="../static/assets/images/loader.png" alt="" />
+    <img class="preloader__image" width="60" src="../static/assets/images/loader.png" alt=""/>
 </div>
 <!-- /.preloader -->
 <div class="page-wrapper">
@@ -59,55 +59,30 @@
                 <div class="main-menu-wrapper-inner clearfix">
                     <div class="main-menu-wrapper__left clearfix">
                         <div class="main-menu-wrapper__logo">
-                            <a href="index.html"><img src="../static/assets/images/resources/logo-1.png" alt="">MEATCH</a>
+                            <a href="index2.html"><img src="../static/assets/images/resources/logo-1.png" alt=""></a>
                         </div>
                         <div class="main-menu-wrapper__main-menu">
                             <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                             <ul class="main-menu__list">
                                 <li class="dropdown current">
-                                    <a href="/home">Home</a>
-                                    <ul>
-                                        <li>
-                                            <a href="index.html">Home One</a>
-                                        </li>
-                                        <li><a href="index2.html">Home Two</a></li>
-                                        <li class="dropdown">
-                                            <a href="#">Header Styles</a>
-                                            <ul>
-                                                <li><a href="index.html">Header One</a></li>
-                                                <li><a href="index.html">Header Two</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                                    <a href="index2.html">Домой</a>
                                 </li>
-                                <li><a href="about.html">About</a></li>
+                                <li><a href="meach/about.html">О нас</a></li>
                                 <li class="dropdown">
-                                    <a href="#">Services</a>
+                                    <a href="#">Специалисты</a>
                                     <ul>
-                                        <li><a href="services.html">Services</a></li>
-                                        <li><a href="managed-it.html">Managed It</a></li>
-                                        <li><a href="it-support.html">IT Support</a></li>
-                                        <li><a href="it-consultancy.html">IT Consultancy</a></li>
-                                        <li><a href="cloud-computing.html">Cloud Computing</a></li>
-                                        <li><a href="cyber-security.html">Cyber Security</a></li>
-                                        <li><a href="custom-software.html">Custom Software</a></li>
+                                        <li><a href="meach/project.html">Специалисты</a></li>
+                                        <li><a href="meach/project-details.html">Карточки специалистов</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="#">Projects</a>
+                                    <a href="#">Новости</a>
                                     <ul>
-                                        <li><a href="project.html">Projects</a></li>
-                                        <li><a href="project-details.html">Project Details</a></li>
+                                        <li><a href="meach/news.html">Новости</a></li>
+                                        <li><a href="meach/news-details.html">Подробности</a></li>
                                     </ul>
                                 </li>
-                                <li class="dropdown">
-                                    <a href="#">News</a>
-                                    <ul>
-                                        <li><a href="news.html">News</a></li>
-                                        <li><a href="news-details.html">News Details</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="meach/contact.html">Контакты</a></li>
                             </ul>
                         </div>
                     </div>
@@ -117,13 +92,13 @@
                                 <img src="../static/assets/images/shapes/phone-icon.png" alt="">
                             </div>
                             <div class="main-menu-wrapper__call-number">
-                                <p>Have any questions?</p>
-                                <h5><a href="tel:926668880000">Free: + 92 666 888 0000</a></h5>
+                                <p>Появились вопросы?</p>
+                                <h5><a href="tel:926668880000">Бесплатный звонок: + 7 937 494 9911</a></h5>
                             </div>
                         </div>
                         <div class="main-menu-wrapper__search-box-cart-box">
                             <a href="#" class="main-menu-wrapper__search search-toggler icon-magnifying-glass"></a>
-                            <a href="contact.html" class="main-menu-wrapper__cart icon-avatar"></a>
+                            <a href="meach/enter.html" class="main-menu-wrapper__cart icon-avatar"></a>
                         </div>
                     </div>
                 </div>
@@ -165,10 +140,10 @@
                                     <div class="main-slider-two__map"
                                          style="background-image: url(static/assets/images/shapes/main-slider-two-map.png)">
                                     </div>
-                                    <h3>IT Managed</h3>
-                                    <h2>Solution <span>Partners</span></h2>
-                                    <p>We’ve One Mission to be the Best IT Software Company in UK</p>
-                                    <a href="about.html" class="thm-btn">Discover More</a>
+                                    <h3>MEACH</h3>
+                                    <h2>Подбор <br> Профессионалов</h2>
+                                    <p>Наша миссия - стать лучшей компанией по подбору Менторов и Коучеров в России</p>
+                                    <a href="meach/about.html" class="thm-btn">Узнать больше</a>
                                 </div>
                             </div>
                         </div>
@@ -187,10 +162,10 @@
                                     <div class="main-slider-two__map"
                                          style="background-image: url(static/assets/images/shapes/main-slider-two-map.png)">
                                     </div>
-                                    <h3>IT Managed</h3>
-                                    <h2>Solution <span>Partners</span></h2>
-                                    <p>We’ve One Mission to be the Best IT Software Company in UK</p>
-                                    <a href="about.html" class="thm-btn">Discover More</a>
+                                    <h3>MEACH</h3>
+                                    <h2>Подбор <br> Профессионалов</h2>
+                                    <p>Наша миссия - стать лучшей компанией по подбору Менторов и Коучеров в России</p>
+                                    <a href="meach/about.html" class="thm-btn">Узнать больше</a>
                                 </div>
                             </div>
                         </div>
@@ -209,10 +184,10 @@
                                     <div class="main-slider-two__map"
                                          style="background-image: url(static/assets/images/shapes/main-slider-two-map.png)">
                                     </div>
-                                    <h3>IT Managed</h3>
-                                    <h2>Solution <span>Partners</span></h2>
-                                    <p>We’ve One Mission to be the Best IT Software Company in UK</p>
-                                    <a href="about.html" class="thm-btn">Discover More</a>
+                                    <h3>MEACH</h3>
+                                    <h2>Подбор <br> Профессионалов</h2>
+                                    <p>Наша миссия - стать лучшей компанией по подбору Менторов и Коучеров в России</p>
+                                    <a href="meach/about.html" class="thm-btn">Узнать больше</a>
                                 </div>
                             </div>
                         </div>
@@ -271,7 +246,7 @@
                             </div>
                             <div class="business-growth__content">
                                 <h4 class="business-growth__title">
-                                    <a href="services.html">Perfect Solution that your Business Demands</a>
+                                    <a href="meach/services.html">Perfect Solution that your Business Demands</a>
                                 </h4>
                                 <p class="business-growth__text">Lorem ipsum dolor amet, consectetur notted adip
                                     sicing elit text.</p>
@@ -286,7 +261,7 @@
                             </div>
                             <div class="business-growth__content">
                                 <h4 class="business-growth__title">
-                                    <a href="about.html">User generated content in real-time will have</a>
+                                    <a href="meach/about.html">User generated content in real-time will have</a>
                                 </h4>
                                 <p class="business-growth__text">Lorem ipsum dolor amet, consectetur notted adip
                                     sicing elit text.</p>
@@ -301,7 +276,7 @@
                             </div>
                             <div class="business-growth__content">
                                 <h4 class="business-growth__title">
-                                    <a href="about.html">Capitalize on low hanging fruit to identify a</a>
+                                    <a href="meach/about.html">Capitalize on low hanging fruit to identify a</a>
                                 </h4>
                                 <p class="business-growth__text">Lorem ipsum dolor amet, consectetur notted adip
                                     sicing elit text.</p>
@@ -314,7 +289,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="business-growth__find-inner">
-                            <p>IT services built specifically for your business. <a href="services.html">Find Your
+                            <p>IT services built specifically for your business. <a href="meach/services.html">Find Your
                                 Solution</a>
                             </p>
                         </div>
@@ -415,7 +390,7 @@
                                 <div class="help__box-two-icon">
                                     <span class="icon-learning"></span>
                                 </div>
-                                <h3 class="help__box-two-title"><a href="it-consultancy.html">IT Management</a></h3>
+                                <h3 class="help__box-two-title"><a href="meach/it-consultancy.html">IT Management</a></h3>
                                 <p class="help__box-two-text">Lorem ipsu dolor sit am adipi we help you ensure
                                     everyone</p>
                             </div>
@@ -425,7 +400,7 @@
                                 <div class="help__box-two-icon">
                                     <span class="icon-verify"></span>
                                 </div>
-                                <h3 class="help__box-two-title"><a href="cyber-security.html">Cyber Security</a>
+                                <h3 class="help__box-two-title"><a href="meach/cyber-security.html">Cyber Security</a>
                                 </h3>
                                 <p class="help__box-two-text">Lorem ipsu dolor sit am adipi we help you ensure
                                     everyone</p>
@@ -436,7 +411,7 @@
                                 <div class="help__box-two-icon">
                                     <span class="icon-cloud"></span>
                                 </div>
-                                <h3 class="help__box-two-title"><a href="cloud-computing.html">Cloud Computing</a>
+                                <h3 class="help__box-two-title"><a href="meach/cloud-computing.html">Cloud Computing</a>
                                 </h3>
                                 <p class="help__box-two-text">Lorem ipsu dolor sit am adipi we help you ensure
                                     everyone</p>
@@ -464,9 +439,9 @@
                     </div>
                     <div class="project-one__content">
                         <p class="project-one__tagline">Ментор PHP Engineering</p>
-                        <h2 class="project-one__title"><a href="project-details.html">Алиса Батталова</a></h2>
+                        <h2 class="project-one__title"><a href="meach/project-details.html">Алиса Батталова</a></h2>
                         <div class="project-one__arrow">
-                            <a href="project-details.html"><span class="icon-right-arrow"></span></a>
+                            <a href="meach/project-details.html"><span class="icon-right-arrow"></span></a>
                         </div>
                     </div>
                 </div>
@@ -477,9 +452,9 @@
                     </div>
                     <div class="project-one__content">
                         <p class="project-one__tagline">Коуч Databases</p>
-                        <h2 class="project-one__title"><a href="project-details.html">Айнур Садыров</a></h2>
+                        <h2 class="project-one__title"><a href="meach/project-details.html">Айнур Садыров</a></h2>
                         <div class="project-one__arrow">
-                            <a href="project-details.html"><span class="icon-right-arrow"></span></a>
+                            <a href="meach/project-details.html"><span class="icon-right-arrow"></span></a>
                         </div>
                     </div>
                 </div>
@@ -490,9 +465,9 @@
                     </div>
                     <div class="project-one__content">
                         <p class="project-one__tagline">Ментор Архитектурное дело</p>
-                        <h2 class="project-one__title"><a href="project-details.html">Алиса Батталова</a></h2>
+                        <h2 class="project-one__title"><a href="meach/project-details.html">Алиса Батталова</a></h2>
                         <div class="project-one__arrow">
-                            <a href="project-details.html"><span class="icon-right-arrow"></span></a>
+                            <a href="meach/project-details.html"><span class="icon-right-arrow"></span></a>
                         </div>
                     </div>
                 </div>
@@ -503,9 +478,9 @@
                     </div>
                     <div class="project-one__content">
                         <p class="project-one__tagline">Коуч Спортивное питание</p>
-                        <h2 class="project-one__title"><a href="project-details.html">Айнур Садыров</a></h2>
+                        <h2 class="project-one__title"><a href="meach/project-details.html">Айнур Садыров</a></h2>
                         <div class="project-one__arrow">
-                            <a href="project-details.html"><span class="icon-right-arrow"></span></a>
+                            <a href="meach/project-details.html"><span class="icon-right-arrow"></span></a>
                         </div>
                     </div>
                 </div>
@@ -516,9 +491,9 @@
                     </div>
                     <div class="project-one__content">
                         <p class="project-one__tagline">Ментор музыки. Флейта</p>
-                        <h2 class="project-one__title"><a href="project-details.html">Алиса Батталова</a></h2>
+                        <h2 class="project-one__title"><a href="meach/project-details.html">Алиса Батталова</a></h2>
                         <div class="project-one__arrow">
-                            <a href="project-details.html"><span class="icon-right-arrow"></span></a>
+                            <a href="meach/project-details.html"><span class="icon-right-arrow"></span></a>
                         </div>
                     </div>
                 </div>
@@ -529,9 +504,9 @@
                     </div>
                     <div class="project-one__content">
                         <p class="project-one__tagline">Коуч Вокал</p>
-                        <h2 class="project-one__title"><a href="project-details.html">Айнур Садыров</a></h2>
+                        <h2 class="project-one__title"><a href="meach/project-details.html">Айнур Садыров</a></h2>
                         <div class="project-one__arrow">
-                            <a href="project-details.html"><span class="icon-right-arrow"></span></a>
+                            <a href="meach/project-details.html"><span class="icon-right-arrow"></span></a>
                         </div>
                     </div>
                 </div>
@@ -542,9 +517,9 @@
                     </div>
                     <div class="project-one__content">
                         <p class="project-one__tagline">Ментор Рисунок. Живопись</p>
-                        <h2 class="project-one__title"><a href="project-details.html">Алиса Батталова</a></h2>
+                        <h2 class="project-one__title"><a href="meach/project-details.html">Алиса Батталова</a></h2>
                         <div class="project-one__arrow">
-                            <a href="project-details.html"><span class="icon-right-arrow"></span></a>
+                            <a href="meach/project-details.html"><span class="icon-right-arrow"></span></a>
                         </div>
                     </div>
                 </div>
@@ -555,9 +530,9 @@
                     </div>
                     <div class="project-one__content">
                         <p class="project-one__tagline">Коуч Stand-Up</p>
-                        <h2 class="project-one__title"><a href="project-details.html">Айнур Садыров</a></h2>
+                        <h2 class="project-one__title"><a href="meach/project-details.html">Айнур Садыров</a></h2>
                         <div class="project-one__arrow">
-                            <a href="project-details.html"><span class="icon-right-arrow"></span></a>
+                            <a href="meach/project-details.html"><span class="icon-right-arrow"></span></a>
                         </div>
                     </div>
                 </div>
@@ -568,9 +543,9 @@
                     </div>
                     <div class="project-one__content">
                         <p class="project-one__tagline">Ментор Бальные танцы</p>
-                        <h2 class="project-one__title"><a href="project-details.html">Алиса Батталова</a></h2>
+                        <h2 class="project-one__title"><a href="meach/project-details.html">Алиса Батталова</a></h2>
                         <div class="project-one__arrow">
-                            <a href="project-details.html"><span class="icon-right-arrow"></span></a>
+                            <a href="meach/project-details.html"><span class="icon-right-arrow"></span></a>
                         </div>
                     </div>
                 </div>
@@ -581,9 +556,9 @@
                     </div>
                     <div class="project-one__content">
                         <p class="project-one__tagline">Коуч Этикет</p>
-                        <h2 class="project-one__title"><a href="project-details.html">Айнур Садыров</a></h2>
+                        <h2 class="project-one__title"><a href="meach/project-details.html">Айнур Садыров</a></h2>
                         <div class="project-one__arrow">
-                            <a href="project-details.html"><span class="icon-right-arrow"></span></a>
+                            <a href="meach/project-details.html"><span class="icon-right-arrow"></span></a>
                         </div>
                     </div>
                 </div>
@@ -744,28 +719,10 @@
         <div class="team-one__container">
             <div class="container">
                 <div class="section-title text-center">
-                    <span class="section-title__tagline">Professional People</span>
-                    <h2 class="section-title__title">Meet the Experts</h2>
+                    <span class="section-title__tagline">Наша Команда</span>
+                    <h2 class="section-title__title">Знакомьтесь с Разработчиками</h2>
                 </div>
-                <div class="row">
-                    <div class="col-xl-3 col-lg-6 col-md-6">
-                        <!--Team One Single-->
-                        <div class="team-one__single  wow fadeInLeft" data-wow-delay="0ms"
-                             data-wow-duration="1000ms">
-                            <div class="team-one__img">
-                                <img src="../static/assets/images/team/team-one-img-1.jpg" alt="">
-                                <div class="team-one__social">
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="team-one__content">
-                                <h3 class="team-one__name">Kevin Martin</h3>
-                                <p class="team-one__title">IT Expert</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row justify-content-center">
                     <div class="col-xl-3 col-lg-6 col-md-6">
                         <!--Team One Single-->
                         <div class="team-one__single wow fadeInLeft" data-wow-delay="100ms"
@@ -779,8 +736,8 @@
                                 </div>
                             </div>
                             <div class="team-one__content">
-                                <h3 class="team-one__name">Jessica Brown</h3>
-                                <p class="team-one__title">IT Expert</p>
+                                <h3 class="team-one__name">Алиса Батталова</h3>
+                                <p class="team-one__title">Аналитика Архитектура Фронт</p>
                             </div>
                         </div>
                     </div>
@@ -797,26 +754,8 @@
                                 </div>
                             </div>
                             <div class="team-one__content">
-                                <h3 class="team-one__name">Mike Hardson</h3>
-                                <p class="team-one__title">IT Expert</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6">
-                        <!--Team One Single-->
-                        <div class="team-one__single wow fadeInRight" data-wow-delay="100ms"
-                             data-wow-duration="1000ms">
-                            <div class="team-one__img">
-                                <img src="../static/assets/images/team/team-one-img-4.jpg" alt="">
-                                <div class="team-one__social">
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="team-one__content">
-                                <h3 class="team-one__name">Christine Eve</h3>
-                                <p class="team-one__title">IT Expert</p>
+                                <h3 class="team-one__name">Айнур Садыров</h3>
+                                <p class="team-one__title">Базы данных Функционал Бек</p>
                             </div>
                         </div>
                     </div>
@@ -876,10 +815,11 @@
     <!--Why Choose End-->
 
     <!--Google Map Start-->
-    <section class="google-map">
+    <section class="contact-page-google-map">
         <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4562.753041141002!2d-118.80123790098536!3d34.152323469614075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e82469c2162619%3A0xba03efb7998eef6d!2sCostco+Wholesale!5e0!3m2!1sbn!2sbd!4v1562518641290!5m2!1sbn!2sbd"
-                class="google-map__one" allowfullscreen></iframe>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.0640289660314!2d49.11985791593204!3d55.79212608056389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415ead1154a251b7%3A0x9d2bb4764b144bf0!2z0YPQuy4g0JrRgNC10LzQu9C10LLRgdC60LDRjywgMzUsINCa0LDQt9Cw0L3RjCwg0KDQtdGB0L8uINCi0LDRgtCw0YDRgdGC0LDQvSwgNDIwMDA4!5e0!3m2!1sru!2sru!4v1650208305622!5m2!1sru!2sru"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                class="contact-page-google-map__one" allowfullscreen></iframe>
 
     </section>
     <!--Google Map End-->
@@ -905,7 +845,7 @@
                             <div class="news-one__single">
                                 <div class="news-one__img">
                                     <img src="../static/assets/images/blog/news-one-img-1.jpg" alt="">
-                                    <a href="news-details.html">
+                                    <a href="meach/news-details.html">
                                         <span class="news-one__plus"></span>
                                     </a>
                                     <div class="news-one__date-box">
@@ -914,20 +854,20 @@
                                 </div>
                                 <div class="news-one__content">
                                     <ul class="list-unstyled news-one__meta">
-                                        <li><a href="news-details.html"><i class="far fa-user-circle"></i> by
+                                        <li><a href="meach/news-details.html"><i class="far fa-user-circle"></i> by
                                             admin</a></li>
-                                        <li><a href="news-details.html"><i class="far fa-comments"></i> 2
+                                        <li><a href="meach/news-details.html"><i class="far fa-comments"></i> 2
                                             Comments</a>
                                         </li>
                                     </ul>
                                     <h3 class="news-one__title">
-                                        <a href="news-details.html">What is Holding Back the IT Solution
+                                        <a href="meach/news-details.html">What is Holding Back the IT Solution
                                             Industry?</a>
                                     </h3>
                                     <p class="news-one__text">Lorem ipsum is simply free text used by copytyping
                                         refreshing.</p>
                                     <div class="news-one__read-more">
-                                        <a href="news-details.html" class="news-one__read-more-btn">Read More</a>
+                                        <a href="meach/news-details.html" class="news-one__read-more-btn">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -935,7 +875,7 @@
                             <div class="news-one__single">
                                 <div class="news-one__img">
                                     <img src="../static/assets/images/blog/news-one-img-2.jpg" alt="">
-                                    <a href="news-details.html">
+                                    <a href="meach/news-details.html">
                                         <span class="news-one__plus"></span>
                                     </a>
                                     <div class="news-one__date-box">
@@ -944,20 +884,20 @@
                                 </div>
                                 <div class="news-one__content">
                                     <ul class="list-unstyled news-one__meta">
-                                        <li><a href="news-details.html"><i class="far fa-user-circle"></i> by
+                                        <li><a href="meach/news-details.html"><i class="far fa-user-circle"></i> by
                                             admin</a></li>
-                                        <li><a href="news-details.html"><i class="far fa-comments"></i> 2
+                                        <li><a href="meach/news-details.html"><i class="far fa-comments"></i> 2
                                             Comments</a>
                                         </li>
                                     </ul>
                                     <h3 class="news-one__title">
-                                        <a href="news-details.html">Bring to the table win-win survival
+                                        <a href="meach/news-details.html">Bring to the table win-win survival
                                             strategies</a>
                                     </h3>
                                     <p class="news-one__text">Lorem ipsum is simply free text used by copytyping
                                         refreshing.</p>
                                     <div class="news-one__read-more">
-                                        <a href="news-details.html" class="news-one__read-more-btn">Read More</a>
+                                        <a href="meach/news-details.html" class="news-one__read-more-btn">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -965,7 +905,7 @@
                             <div class="news-one__single">
                                 <div class="news-one__img">
                                     <img src="../static/assets/images/blog/news-one-img-3.jpg" alt="">
-                                    <a href="news-details.html">
+                                    <a href="meach/news-details.html">
                                         <span class="news-one__plus"></span>
                                     </a>
                                     <div class="news-one__date-box">
@@ -974,19 +914,19 @@
                                 </div>
                                 <div class="news-one__content">
                                     <ul class="list-unstyled news-one__meta">
-                                        <li><a href="news-details.html"><i class="far fa-user-circle"></i> by
+                                        <li><a href="meach/news-details.html"><i class="far fa-user-circle"></i> by
                                             admin</a></li>
-                                        <li><a href="news-details.html"><i class="far fa-comments"></i> 2
+                                        <li><a href="meach/news-details.html"><i class="far fa-comments"></i> 2
                                             Comments</a>
                                         </li>
                                     </ul>
                                     <h3 class="news-one__title">
-                                        <a href="news-details.html">Leverage agile frameworks to provide a</a>
+                                        <a href="meach/news-details.html">Leverage agile frameworks to provide a</a>
                                     </h3>
                                     <p class="news-one__text">Lorem ipsum is simply free text used by copytyping
                                         refreshing.</p>
                                     <div class="news-one__read-more">
-                                        <a href="news-details.html" class="news-one__read-more-btn">Read More</a>
+                                        <a href="meach/news-details.html" class="news-one__read-more-btn">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -994,7 +934,7 @@
                             <div class="news-one__single">
                                 <div class="news-one__img">
                                     <img src="../static/assets/images/blog/news-one-img-1.jpg" alt="">
-                                    <a href="news-details.html">
+                                    <a href="meach/news-details.html">
                                         <span class="news-one__plus"></span>
                                     </a>
                                     <div class="news-one__date-box">
@@ -1003,20 +943,20 @@
                                 </div>
                                 <div class="news-one__content">
                                     <ul class="list-unstyled news-one__meta">
-                                        <li><a href="news-details.html"><i class="far fa-user-circle"></i> by
+                                        <li><a href="meach/news-details.html"><i class="far fa-user-circle"></i> by
                                             admin</a></li>
-                                        <li><a href="news-details.html"><i class="far fa-comments"></i> 2
+                                        <li><a href="meach/news-details.html"><i class="far fa-comments"></i> 2
                                             Comments</a>
                                         </li>
                                     </ul>
                                     <h3 class="news-one__title">
-                                        <a href="news-details.html">What is Holding Back the IT Solution
+                                        <a href="meach/news-details.html">What is Holding Back the IT Solution
                                             Industry?</a>
                                     </h3>
                                     <p class="news-one__text">Lorem ipsum is simply free text used by copytyping
                                         refreshing.</p>
                                     <div class="news-one__read-more">
-                                        <a href="news-details.html" class="news-one__read-more-btn">Read More</a>
+                                        <a href="meach/news-details.html" class="news-one__read-more-btn">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -1024,7 +964,7 @@
                             <div class="news-one__single">
                                 <div class="news-one__img">
                                     <img src="../static/assets/images/blog/news-one-img-2.jpg" alt="">
-                                    <a href="news-details.html">
+                                    <a href="meach/news-details.html">
                                         <span class="news-one__plus"></span>
                                     </a>
                                     <div class="news-one__date-box">
@@ -1033,20 +973,20 @@
                                 </div>
                                 <div class="news-one__content">
                                     <ul class="list-unstyled news-one__meta">
-                                        <li><a href="news-details.html"><i class="far fa-user-circle"></i> by
+                                        <li><a href="meach/news-details.html"><i class="far fa-user-circle"></i> by
                                             admin</a></li>
-                                        <li><a href="news-details.html"><i class="far fa-comments"></i> 2
+                                        <li><a href="meach/news-details.html"><i class="far fa-comments"></i> 2
                                             Comments</a>
                                         </li>
                                     </ul>
                                     <h3 class="news-one__title">
-                                        <a href="news-details.html">What is Holding Back the IT Solution
+                                        <a href="meach/news-details.html">What is Holding Back the IT Solution
                                             Industry?</a>
                                     </h3>
                                     <p class="news-one__text">Lorem ipsum is simply free text used by copytyping
                                         refreshing.</p>
                                     <div class="news-one__read-more">
-                                        <a href="news-details.html" class="news-one__read-more-btn">Read More</a>
+                                        <a href="meach/news-details.html" class="news-one__read-more-btn">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -1054,7 +994,7 @@
                             <div class="news-one__single">
                                 <div class="news-one__img">
                                     <img src="../static/assets/images/blog/news-one-img-3.jpg" alt="">
-                                    <a href="news-details.html">
+                                    <a href="meach/news-details.html">
                                         <span class="news-one__plus"></span>
                                     </a>
                                     <div class="news-one__date-box">
@@ -1063,20 +1003,20 @@
                                 </div>
                                 <div class="news-one__content">
                                     <ul class="list-unstyled news-one__meta">
-                                        <li><a href="news-details.html"><i class="far fa-user-circle"></i> by
+                                        <li><a href="meach/news-details.html"><i class="far fa-user-circle"></i> by
                                             admin</a></li>
-                                        <li><a href="news-details.html"><i class="far fa-comments"></i> 2
+                                        <li><a href="meach/news-details.html"><i class="far fa-comments"></i> 2
                                             Comments</a>
                                         </li>
                                     </ul>
                                     <h3 class="news-one__title">
-                                        <a href="news-details.html">What is Holding Back the IT Solution
+                                        <a href="meach/news-details.html">What is Holding Back the IT Solution
                                             Industry?</a>
                                     </h3>
                                     <p class="news-one__text">Lorem ipsum is simply free text used by copytyping
                                         refreshing.</p>
                                     <div class="news-one__read-more">
-                                        <a href="news-details.html" class="news-one__read-more-btn">Read More</a>
+                                        <a href="meach/news-details.html" class="news-one__read-more-btn">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -1097,12 +1037,12 @@
                     <div class="col-xl-12">
                         <div class="cta-two__inner">
                             <div class="cta-two__left">
-                                <h2 class="cta-two__title">We’ll Help You Overcome Your <br> Technology
-                                    Challenges
+                                <h2 class="cta-two__title">Мы Поможем Вам Преодолеть <br> Трудности
+                                    В Обучении
                                 </h2>
                             </div>
                             <div class="cta-two__btn-box">
-                                <a href="contact.html" class="cta-one__btn thm-btn">Discover More</a>
+                                <a href="meach/contact.html" class="cta-one__btn thm-btn">Узнайте больше</a>
                             </div>
                         </div>
                     </div>
@@ -1123,11 +1063,11 @@
                         <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                             <div class="footer-widget__column footer-widget__about">
                                 <div class="footer-widget__about-logo">
-                                    <a href="index.html"><img src="../static/assets/images/resources/footer-logo.png"
-                                                              alt=""></a>
+                                    <a href="index2.html"><img src="../static/assets/images/resources/footer-logo.png"
+                                                                  alt=""></a>
                                 </div>
-                                <p class="footer-widget__about-text">There are many vari of pass of lorem ipsum
-                                    availab but the majority have suffered in some forms.</p>
+                                <p class="footer-widget__about-text">Присоединяйтесь к нам в социальных сетях!<br>Мы
+                                    всегда на связи</p>
                                 <div class="footer-widget__about-social">
                                     <a href="#"><i class="fab fa-twitter"></i></a>
                                     <a href="#"><i class="fab fa-facebook"></i></a>
@@ -1138,35 +1078,33 @@
                         </div>
                         <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                             <div class="footer-widget__column footer-widget__links clearfix">
-                                <h3 class="footer-widget__title">Links</h3>
+                                <h3 class="footer-widget__title">Ссылки</h3>
                                 <ul class="footer-widget__links-list list-unstyled clearfix">
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="about.html">Leadership Team</a></li>
-                                    <li><a href="news.html">IT Blog</a></li>
-                                    <li><a href="project.html">Case Studies</a></li>
-                                    <li><a href="contact.html">Locations</a></li>
+                                    <li><a href="meach/about.html">О нас</a></li>
+                                    <li><a href="meach/about.html">Команда руководителей</a></li>
+                                    <li><a href="meach/news.html">Блог</a></li>
+                                    <li><a href="meach/project.html">Целевые исследования</a></li>
+                                    <li><a href="meach/contact.html">Филиалы</a></li>
                                 </ul>
                                 <ul
                                         class="footer-widget__links-list footer-widget__links-list-two list-unstyled clearfix">
-                                    <li><a href="managed-it.html">Managed IT</a></li>
-                                    <li><a href="it-support.html">IT Support</a></li>
-                                    <li><a href="it-consultancy.html">IT Consultancy</a></li>
-                                    <li><a href="cloud-computing.html">Cloud Computing</a></li>
+                                    <li><a href="meach/managed-it.html">Управление</a></li>
+                                    <li><a href="meach/it-support.html">Профподдержка</a></li>
+                                    <li><a href="meach/it-consultancy.html">Консалтинг</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                             <div class="footer-widget__column footer-widget__contact">
-                                <h3 class="footer-widget__title">Contact</h3>
-                                <p class="footer-widget__contact-text">66 Road Broklyn Street, 600 <br> New York,
-                                    USA</p>
+                                <h3 class="footer-widget__title">Контакты</h3>
+                                <p class="footer-widget__contact-text">дом 35, улица Кремлёвская<br> Казань, Россия</p>
                                 <ul class="list-unstyled footer-widget__contact-list">
                                     <li>
                                         <div class="icon">
                                             <span class="icon-email"></span>
                                         </div>
                                         <div class="text">
-                                            <p><a href="mailto:needhelp@company.com">needhelp@company.com</a></p>
+                                            <p><a href="mailto:needhelp@company.com">meach@meach.io</a></p>
                                         </div>
                                     </li>
                                     <li>
@@ -1174,7 +1112,7 @@
                                             <span class="icon-telephone"></span>
                                         </div>
                                         <div class="text">
-                                            <p><a href="tel:926668880000">+ 92 666 888 0000</a></p>
+                                            <p><a href="tel:926668880000">+ 7 937 494 9911</a></p>
                                         </div>
                                     </li>
                                 </ul>
@@ -1182,14 +1120,14 @@
                         </div>
                         <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                             <div class="footer-widget__column footer-widget__newsletter">
-                                <h3 class="footer-widget__title">Newsletter</h3>
-                                <p class="footer-widget__newsletter-text">Subscribe to our newsletter for daily new
-                                    and updates</p>
+                                <h3 class="footer-widget__title">Рассылки</h3>
+                                <p class="footer-widget__newsletter-text">Подпишитесь на нашу рассылку, чтобы получать
+                                    ежедневные новости и обновления</p>
                                 <form class="footer-widget__newsletter-form mc-form"
                                       data-url="https://xyz.us18.list-manage.com/subscribe/post?u=20e91746ef818cd941998c598&id=cc0ee8140e">
                                     <div class="footer-widget__newsletter-input-box">
-                                        <input type="email" placeholder="Email address" name="email">
-                                        <button type="submit" class="footer-widget__newsletter-btn">Send</button>
+                                        <input type="email" placeholder="Почтовый адрес" name="email">
+                                        <button type="submit" class="footer-widget__newsletter-btn">Отправить</button>
                                     </div>
                                 </form>
                                 <div class="mc-form__response"></div><!-- /.mc-form__response -->
@@ -1206,14 +1144,15 @@
                         <div class="col-xl-12">
                             <div class="site-footer__bottom-inner">
                                 <div class="site-footer__bottom-left">
-                                    <p class="site-footer__bottom-text">© All Copyright <span class="dynamic-year">
-                                            </span><!-- /.dynamic-year --> by <a href="#">Layerdrops.com</a></p>
+                                    <p class="site-footer__bottom-text">© Все авторские права защищены <span
+                                            class="dynamic-year">
+                                            </span><!-- /.dynamic-year --> <a href="#">Meach.io</a></p>
                                 </div>
                                 <div class="site-footer__bottom-right">
                                     <ul class="list-unstyled site-footer__bottom-menu">
-                                        <li><a href="contact.html">Terms & Condition</a></li>
+                                        <li><a href="meach/contact.html">Условия & Положения</a></li>
                                         <li><span>/</span></li>
-                                        <li><a href="contact.html">Privacy Policy</a></li>
+                                        <li><a href="meach/contact.html">Политика Конфиденциальности</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1236,8 +1175,8 @@
         <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
         <div class="logo-box">
-            <a href="index.html" aria-label="logo image"><img src="../static/assets/images/resources/footer-logo.png"
-                                                              width="155" alt="" /></a>
+            <a href="index2.html" aria-label="logo image"><img src="../static/assets/images/resources/footer-logo.png"
+                                                                  width="155" alt=""/></a>
         </div>
         <!-- /.logo-box -->
         <div class="mobile-nav__container"></div>
@@ -1246,11 +1185,11 @@
         <ul class="mobile-nav__contact list-unstyled">
             <li>
                 <i class="fa fa-envelope"></i>
-                <a href="mailto:needhelp@packageName__.com">needhelp@izeetak.com</a>
+                <a href="mailto:needhelp@packageName__.com">meach@meach.io</a>
             </li>
             <li>
                 <i class="fa fa-phone-alt"></i>
-                <a href="tel:666-888-0000">666 888 0000</a>
+                <a href="tel:666-888-0000">937 494 9911</a>
             </li>
         </ul><!-- /.mobile-nav__contact -->
         <div class="mobile-nav__top">
@@ -1261,7 +1200,6 @@
                 <a href="#" class="fab fa-instagram"></a>
             </div><!-- /.mobile-nav__social -->
         </div><!-- /.mobile-nav__top -->
-
 
 
     </div>
@@ -1275,7 +1213,7 @@
     <div class="search-popup__content">
         <form action="#">
             <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
-            <input type="text" id="search" placeholder="Search Here..." />
+            <input type="text" id="search" placeholder="Search Here..."/>
             <button type="submit" aria-label="search submit" class="thm-btn">
                 <i class="icon-magnifying-glass"></i>
             </button>
