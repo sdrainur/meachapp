@@ -16,10 +16,10 @@ public class TeachersController {
     UserRepository userRepository;
 
     @GetMapping("/teachers")
-    public String getTeachers(Model model){
-        Iterable<User> teachers = userRepository.findByRoles(Role.TEACHER);
-        model.addAttribute("teachers", teachers);
-        return "teachers";
+        public String getTeachers(Model model){
+            Iterable<User> teachers = userRepository.findByRoles(Role.TEACHER);
+            model.addAttribute("teachers", teachers);
+            return "teachers";
     }
 
     @PostMapping("/filter")

@@ -3,10 +3,7 @@ package ru.battalovasadyrov.meach.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.CookieValue;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import ru.battalovasadyrov.meach.model.User;
 import ru.battalovasadyrov.meach.service.UserService;
 
@@ -31,7 +28,7 @@ public class RegistrationController {
 
     @PostMapping("/registration")
     public String addUser(User user, Model model) {
-        if(user.getPassword().equals(user.getConfirmPassword())) {
+        if (user.getPassword().equals(user.getConfirmPassword())) {
             if (!userService.addUser(user)) {
                 model.addAttribute("message", "User exists!");
                 return "registration";
@@ -43,30 +40,14 @@ public class RegistrationController {
         }
     }
 
-    @GetMapping("/activate")
-    public String activationPage() {
-        return "activate";
-    }
-
-    @PostMapping("/activate")
-    public String activate(@RequestParam String activationCode, Model model) {
-        boolean isActivated = userService.activateUser(activationCode);
-        if (isActivated) {
-            return "redirect:/login";
-        } else {
-            model.addAttribute("message", "Activation code is wrong!");
-        }
-        return "activate";
-    }
-
     @GetMapping("/password-reset")
-    public String passwordResetPage(Model model){
+    public String passwordResetPage(Model model) {
         return "password-reset";
     }
 
     @PostMapping("/password-reset")
-    public String passwordReset(@RequestParam String email, Model model){
-        if(userService.sendResetEmail(email)){
+    public String passwordReset(@RequestParam String email, Model model) {
+        if (userService.sendResetEmail(email)) {
             return "set-password";
         } else {
             model.addAttribute("message", "You entered wrong E-Mail!");
@@ -75,8 +56,8 @@ public class RegistrationController {
     }
 
     @GetMapping("set-password")
-    public String setPassword(){
-        return"set-password";
+    public String setPassword() {
+        return "set-password";
     }
 
 }
