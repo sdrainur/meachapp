@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin page</title>
+</head>
+<body>
+<h1>Admin page</h1>
+<div th:each="user : ${users}">
+    <form>
+        <p th:text="${user.getUsername()}"/>
+        <a th:href="@{/admin/edit/{id}(id=${user.getId()})}">Edit</a>
+    </form>
+</div>
+</body>
+</html>
