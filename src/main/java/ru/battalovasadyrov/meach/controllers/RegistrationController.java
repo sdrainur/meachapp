@@ -33,7 +33,7 @@ public class RegistrationController {
                 model.addAttribute("message", "User exists!");
                 return "registration";
             }
-            return "/activate";
+            return "redirect:/activate";
         } else {
             model.addAttribute("message", "Passwords not same");
             return "registration";
