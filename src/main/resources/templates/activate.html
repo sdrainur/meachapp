@@ -79,7 +79,7 @@
                                 <span class="icon-pin"></span>
                             </div>
                             <div class="text">
-                                <p>дом 35, улица Кремлёвская</p>
+                                <p>дом 35, улица Кремлёвская. Казань</p>
                             </div>
                         </li>
                         <li>
@@ -95,6 +95,7 @@
                 <div class="main-header__top-right">
                     <div class="main-header__top-right-text">
                         <p><span>Найм:</span> Вы целеустремленный и мотивированный профессионал? Приглашаем на работу!
+                        </p>
                     </div>
                     <div class="main-header__top-right-social">
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -110,37 +111,37 @@
                 <div class="main-menu-wrapper-inner clearfix">
                     <div class="main-menu-wrapper__left clearfix">
                         <div class="main-menu-wrapper__logo">
-                            <a href="index2.html"><img src="../static/assets/images/resources/logo-1.png" alt=""></a>
+                            <a th:href="@{index}"><img src="../../static/assets/images/resources/logo-1.png" alt=""></a>
                         </div>
                         <div class="main-menu-wrapper__main-menu">
                             <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                             <ul class="main-menu__list">
                                 <li class="dropdown">
-                                    <a href="index2.html">Домой</a>
+                                    <a th:href="@{index2}">Домой</a>
                                 </li>
-                                <li><a href="about.html">О нас</a></li>
+                                <li class="dropdown current"><a th:href="@{about}">О нас</a></li>
                                 <li class="dropdown">
                                     <a href="#">Специалисты</a>
                                     <ul>
-                                        <li><a href="project.html">Специалисты</a></li>
-                                        <li><a href="project-details.html">Карточки специалистов</a></li>
+                                        <li><a th:href="@{project}">Специалисты</a></li>
+                                        <li><a th:href="@{project-details}">Карточки специалистов</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
                                     <a href="#">Новости</a>
                                     <ul>
-                                        <li><a href="news.html">Новости</a></li>
-                                        <li><a href="news-details.html">Подробности</a></li>
+                                        <li><a th:href="@{news}">Новости</a></li>
+                                        <li><a th:href="@{news-details}">Подробности</a></li>
                                     </ul>
                                 </li>
-                                <li class="current"><a href="contact.html">Контакты</a></li>
+                                <li><a th:href="@{contact}">Контакты</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="main-menu-wrapper__right">
                         <div class="main-menu-wrapper__call">
                             <div class="main-menu-wrapper__call-icon">
-                                <img src="../static/assets/images/shapes/phone-icon.png" alt="">
+                                <img src="../../static/assets/images/shapes/phone-icon.png" alt="">
                             </div>
                             <div class="main-menu-wrapper__call-number">
                                 <p>Появились вопросы?</p>
@@ -149,13 +150,14 @@
                         </div>
                         <div class="main-menu-wrapper__search-box-cart-box">
                             <a href="#" class="main-menu-wrapper__search search-toggler icon-magnifying-glass"></a>
-                            <a href="login.html" class="main-menu-wrapper__cart icon-avatar"></a>
+                            <a th:href="@{home}" class="main-menu-wrapper__cart icon-avatar"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
+
 
     <div class="stricky-header stricked-menu main-menu">
         <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
@@ -427,7 +429,7 @@
 <script src="../static/assets/vendors/timepicker/timePicker.js"></script>
 
 
-<script src="http://maps.google.com/maps/api/js?key=AIzaSyATY4Rxc8jNvDpsK8ZetC7JyN4PFVYGCGM"></script>
+<!--<script src="http://maps.google.com/maps/api/js?key=AIzaSyATY4Rxc8jNvDpsK8ZetC7JyN4PFVYGCGM"></script>-->
 
 
 <!-- template js -->
