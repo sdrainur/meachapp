@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import ru.battalovasadyrov.meach.model.User;
 import ru.battalovasadyrov.meach.repository.UserRepository;
 
@@ -33,6 +34,17 @@ public class UsersController {
             userFromDb = optionalUserFromDb.get();
         }
         model.addAttribute("user", userFromDb);
-        return "user-page";
+        return "about-user";
+    }
+
+    @GetMapping("/info-editor")
+    public String userEditor(){
+        return "user-editor";
+    }
+
+    @PostMapping("/info-editor")
+    public String editUser(){
+
+         return "redirect:/home";
     }
 }

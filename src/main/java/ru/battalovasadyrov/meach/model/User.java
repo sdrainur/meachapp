@@ -9,6 +9,7 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.util.Collection;
+import java.util.Date;
 import java.util.Set;
 
 @Entity
@@ -21,9 +22,28 @@ public class User implements UserDetails {
     @NotEmpty(message = "Name must not be empty!")
     @Size(min=2, message = "Name must have at least 2 digits")
     private String firstName;
+
+    public Date getBirthDate() {
+        return birthDate;
+    }
+
+    public void setBirthDate(Date birthDate) {
+        this.birthDate = birthDate;
+    }
+
+    public Date getRegistrationDate() {
+        return registrationDate;
+    }
+
+    public void setRegistrationDate(Date registrationDate) {
+        this.registrationDate = registrationDate;
+    }
+
     @NotEmpty(message = "First name must not be empty!")
     @Size(min=2, message = "Second name must have at least 2 digits")
     private String secondName;
+    private Date birthDate;
+    private Date registrationDate;
     @Pattern(regexp = "/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^\\w\\s]).{6,}/")
     private String password;
     @Transient
